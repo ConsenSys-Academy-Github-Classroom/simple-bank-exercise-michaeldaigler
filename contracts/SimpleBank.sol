@@ -81,7 +81,7 @@ contract SimpleBank {
       //    accessed from of the global variable `msg`
         balances[msg.sender] += msg.value;
       // 4. Emit the appropriate event associated with this function
-      emit LogDepositMade(msg.sender, msg.value)
+      emit LogDepositMade(msg.sender, msg.value);
       // 5. return the balance of sndr of this transaction
     }
 

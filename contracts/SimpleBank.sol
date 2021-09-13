@@ -49,6 +49,9 @@ contract SimpleBank {
    fallback() external payable {
         revert();
     }
+    receive() external payable {
+
+    }
 
     /// @notice Get balance
     /// @return The balance of the user
